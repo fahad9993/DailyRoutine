@@ -1,12 +1,17 @@
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: "./build-assests/logo",
   },
   rebuildConfig: {},
   makers: [
     {
       name: "@electron-forge/maker-squirrel",
-      config: {},
+      config: {
+        iconUrl:
+          "https://github.com/fahad9993/DailyRoutine/blob/main/build-assests/logo.ico",
+        setupIcon: "./build-assests/logo",
+      },
     },
     {
       name: "@electron-forge/maker-zip",
@@ -14,11 +19,19 @@ module.exports = {
     },
     {
       name: "@electron-forge/maker-deb",
-      config: {},
+      config: {
+        options: {
+          icon: "./build-assests/logo",
+        },
+      },
     },
     {
       name: "@electron-forge/maker-rpm",
-      config: {},
+      config: {
+        options: {
+          icon: "./build-assests/logo",
+        },
+      },
     },
   ],
   plugins: [
