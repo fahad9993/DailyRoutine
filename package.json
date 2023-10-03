@@ -1,26 +1,22 @@
 {
   "name": "dailyroutine",
+  "productName": "Daily Routine",
   "version": "1.0.0",
   "description": "A simple daily routine",
-  "main": "src/main.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "package": "build"
   },
   "author": "Md. Fahad Rahman",
   "license": "ISC",
   "devDependencies": {
-    "@electron-forge/cli": "^6.4.2",
     "electron": "^26.2.4",
     "electron-builder": "^24.6.4"
   },
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "win32": {
-          "target": "nsis"
-        }
-      }
-    }
+  "build": {
+    "appId": "com.fahad9993.dailyroutine",
+    "files": "build/assests${/*}"
   }
 }
