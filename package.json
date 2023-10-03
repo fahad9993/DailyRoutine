@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron main.js",
-    "package": "build"
+    "package": "electron-builder"
   },
   "author": "Md. Fahad Rahman",
   "license": "ISC",
@@ -17,6 +17,11 @@
   },
   "build": {
     "appId": "com.fahad9993.dailyroutine",
-    "files": "build/assests${/*}"
+    "files": [
+      "build/assets/**/*"
+    ],
+    "win": {
+      "icon": "build/assets/logo.ico"
+    }
   }
 }

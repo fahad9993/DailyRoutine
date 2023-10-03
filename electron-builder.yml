@@ -1,0 +1,10 @@
+appId: com.fahad9993.dailyroutine
+productName: Daily Routine
+directories:
+  output: dist
+files:
+  - build
+  - node_modules
+win:
+  target: nsis
+  icon: build/assets/logo.ico
