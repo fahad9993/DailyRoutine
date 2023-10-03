@@ -1,0 +1,43 @@
+/* widget.css */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.current-activity-text {
+  font-weight: 700; /* You can adjust the font weight as needed */
+}
+
+.widget-container {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.time-slot {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.time {
+  color: #007acc;
+  margin-right: 10px;
+}
+
+.activity {
+  color: #333;
+  font-weight: 500;
+}
+
+.current-activity {
+  background: linear-gradient(
+    to right,
+    #00ff00,
+    #800080
+  ); /* Green to Violet gradient */
+  color: rgb(43, 31, 31);
+}
+
+.all-activity {
+  margin-top: 20px;
+}
