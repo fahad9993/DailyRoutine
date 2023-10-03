@@ -1,7 +1,9 @@
+const { resolve } = require("path");
+
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: "./build-assests/logo",
+    icon: resolve(__dirname, "build-assests", "logo.ico"),
   },
   rebuildConfig: {},
   makers: [
@@ -10,7 +12,7 @@ module.exports = {
       config: {
         iconUrl:
           "https://github.com/fahad9993/DailyRoutine/blob/main/build-assests/logo.ico",
-        setupIcon: "./build-assests/logo",
+        setupIcon: resolve(__dirname, "build-assests", "logo.ico"),
       },
     },
     {
@@ -21,7 +23,7 @@ module.exports = {
       name: "@electron-forge/maker-deb",
       config: {
         options: {
-          icon: "./build-assests/logo",
+          icon: resolve(__dirname, "build-assests", "logo.ico"),
         },
       },
     },
@@ -29,7 +31,7 @@ module.exports = {
       name: "@electron-forge/maker-rpm",
       config: {
         options: {
-          icon: "./build-assests/logo",
+          icon: resolve(__dirname, "build-assests", "logo.ico"),
         },
       },
     },
