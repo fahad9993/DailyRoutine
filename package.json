@@ -10,7 +10,6 @@
   "author": "Md. Fahad Rahman",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^26.2.4",
-    "nodemon": "^3.0.1"
+    "electron": "^26.2.4"
   }
 }
