@@ -66,7 +66,7 @@ function updateCurrentActivity() {
     const endTime = timeToTimestamp(entry.end);
 
     if (currentTime >= startTime && currentTime <= endTime) {
-      currentActivityText.textContent = entry.activity;
+      currentActivityText.textContent = entry.start + " >> " + entry.activity;
       return;
     }
   }
