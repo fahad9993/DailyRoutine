@@ -6,22 +6,11 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js",
-    "package": "electron-builder"
+    "start": "electron ."
   },
   "author": "Md. Fahad Rahman",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^26.2.4",
-    "electron-builder": "^24.6.4"
-  },
-  "build": {
-    "appId": "com.fahad9993.dailyroutine",
-    "files": [
-      "build/assets/**/*"
-    ],
-    "win": {
-      "icon": "build/assets/logo.ico"
-    }
+    "electron": "^26.2.4"
   }
 }
